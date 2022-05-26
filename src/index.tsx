@@ -2,6 +2,8 @@ import { createPathComponent, LeafletContextInterface } from '@react-leaflet/cor
 import L, { LeafletMouseEventHandlerFn } from 'leaflet'
 import React, { useEffect } from 'react'
 
+import 'leaflet.markercluster';
+
 //webpack failing when loading leaflet marker icon
 delete (L.Icon.Default as any).prototype._getIconUrl
 L.Icon.Default.mergeOptions({
